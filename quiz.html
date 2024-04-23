@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Application</h1>
+    <form id="quizForm">
+      <label for="quizHeading">Quiz Heading:</label>
+      <input type="text" id="quizHeading" name="quizHeading" required /><br />
+      <label for="quizTopic">Quiz Topic:</label>
+      <input type="text" id="quizTopic" name="quizTopic" required /><br />
+      <h2>Multiple Choice Questions</h2>
+      <div class="questionsContainer">
+        <ol>
+          <li>
+            <label for="q1">What is the national flower of Pakistan?</label><br />
+            <input type="hidden" id="q1Correct" value="Jasmine" />
+            <input type="radio" id="q1a" name="q1a" value="Lotus" required />
+            <label for="q1a">Lotus</label><br />
+            <input type="radio" id="q1b" name="q1a" value="Rose" />
+            <label for="q1b">Rose</label><br />
+            <input type="radio" id="q1c" name="q1a" value="Jasmine" />
+            <label for="q1c">Jasmine</label><br />
+            <input type="radio" id="q1d" name="q1a" value="Sunflower" />
+            <label for="q1d">Sunflower</label><br />
+          </li>
+          <li>
+            <label for="q2">Who is the founder of Pakistan?</label><br />
+            <input type="hidden" id="q2Correct" value="Muhammad Ali Jinnah" />
+            <input type="radio" id="q2a" name="q2a" value="Muhammad Ali Jinnah" required />
+            <label for="q2a">Muhammad Ali Jinnah</label><br />
+            <input type="radio" id="q2b" name="q2a" value="Allama Iqbal" />
+            <label for="q2b">Allama Iqbal</label><br />
+            <input type="radio" id="q2c" name="q2a" value="Liaquat Ali Khan" />
+            <label for="q2c">Liaquat Ali Khan</label><br />
+            <input type="radio" id="q2d" name="q2a" value="Fatima Jinnah" />
+            <label for="q2d">Fatima Jinnah</label><br />
+          </li>
+          <li>
+            <label for="q3">Which city is known as the cultural capital of Pakistan?</label><br />
+            <input type="hidden" id="q3Correct" value="Lahore" />
+            <input type="radio" id="q3a" name="q3a" value="Islamabad" required />
+            <label for="q3a">Islamabad</label><br />
+            <input type="radio" id="q3b" name="q3a" value="Karachi" />
+            <label for="q3b">Karachi</label><br />
+            <input type="radio" id="q3c" name="q3a" value="Lahore" />
+            <label for="q3c">Lahore</label><br />
+            <input type="radio" id="q3d" name="q3a" value="Peshawar" />
+            <label for="q3d">Peshawar</label><br />
+          </li>
+          <li>
+            <label for="q4">Which mountain is the second highest peak in Pakistan and the world?</label><br />
+            <input type="hidden" id="q4Correct" value="K2" />
+            <input type="radio" id="q4a" name="q4a" value="Mount Everest" required />
+            <label for="q4a">Mount Everest</label><br />
+            <input type="radio" id="q4b" name="q4a" value="K2" />
+            <label for="q4b">K2</label><br />
+            <input type="radio" id="q4c" name="q4a" value="Nanga Parbat" />
+            <label for="q4c">Nanga Parbat</label><br />
+            <input type="radio" id="q4d" name="q4a" value="Gasherbrum I" />
+            <label for="q4d">Gasherbrum I</label><br />
+          </li>
+          <li>
+            <label for="q5">Which year did Pakistan gain independence?</label><br />
+            <input type="hidden" id="q5Correct" value="1947" />
+            <input type="radio" id="q5a" name="q5a" value="1947" required />
+            <label for="q5a">1947</label><br />
+            <input type="radio" id="q5b" name="q5a" value="1956" />
+            <label for="q5b">1956</label><br />
+            <input type="radio" id="q5c" name="q5a" value="1965" />
+            <label for="q5c">1965</label><br />
+            <input type="radio" id="q5d" name="q5a" value="1971" />
+            <label for="q5d">1971</label><br />
+          </li>
+        </ol>
+      </div>
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
